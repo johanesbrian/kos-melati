@@ -27,9 +27,7 @@ var TEXT = {
     tersedia: 'Tersedia',
     penuh: 'Penuh',
     optPenuh: ' (penuh)',
-    perUpdate: 'Ketersediaan kamar per ',
-    tipe: 'Tipe',
-    legend: 'Nama folder = nomor kamar.'
+    perUpdate: 'Ketersediaan kamar per '
   },
   en: {
     perBulan: '/ month',
@@ -50,9 +48,7 @@ var TEXT = {
     tersedia: 'Available',
     penuh: 'Full',
     optPenuh: ' (full)',
-    perUpdate: 'Room availability as of ',
-    tipe: 'Type',
-    legend: 'Folder name = room number.'
+    perUpdate: 'Room availability as of '
   }
 };
 
@@ -105,7 +101,7 @@ var EN = {
   'kamar.berdua': 'Can be shared by more than 1 person',
   'kamar.pilih': 'Choose This Room',
   'kamar.drive': '📷 See Full Photos of All Rooms',
-  'kamar.note': '💡 Rent is paid 3 or 6 months in advance · 1 room per person, except the corner room (Type C)',
+  'kamar.note': '💡 Rent is paid 3 or 6 months in advance · 1 room per person, except the room type C',
   'bk.title': 'BOOKING &amp; COST ESTIMATE',
   'bk.intro': 'Fill in the short form below. A WhatsApp message to Bu Indri will be written for you.',
   'bk.nama': 'Full Name',
@@ -294,24 +290,11 @@ function renderAvailability() {
     upd.textContent = date ? t('perUpdate') + date : '';
   }
 
-  // Tombol foto lengkap di Google Drive + keterangan nomor kamar per tipe
+  // Tombol foto lengkap di Google Drive
   var box = document.getElementById('foto-lengkap');
   if (box) {
     box.hidden = !C.fotoLengkap;
     document.getElementById('foto-lengkap-link').href = C.fotoLengkap || '#';
-    var nomor = C.nomorKamar || {};
-    var legend = document.getElementById('foto-legend');
-    legend.textContent = '';
-    var keys = Object.keys(nomor).filter(function (k) { return nomor[k]; });
-    if (keys.length) legend.appendChild(document.createTextNode(t('legend') + ' '));
-    keys.forEach(function (k, i) {
-      // Satu tipe tidak terpotong ke baris baru di tengah-tengah
-      var s = document.createElement('span');
-      s.style.whiteSpace = 'nowrap';
-      s.textContent = t('tipe') + ' ' + k + ': ' + nomor[k] + (i < keys.length - 1 ? ' ·' : '');
-      legend.appendChild(s);
-      legend.appendChild(document.createTextNode(' '));
-    });
   }
 }
 

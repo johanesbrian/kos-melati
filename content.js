@@ -32,13 +32,5 @@ var KOS_CONTENT = {
   // Link folder Google Drive berisi foto lengkap semua kamar.
   // Pastikan folder dibagikan "Siapa saja yang memiliki link" sebagai Pelihat (Viewer).
   // Biarkan '' untuk menyembunyikan tombolnya.
-  fotoLengkap: 'https://drive.google.com/drive/folders/1HvKblNb0_2k60DMYfQ2qUue6sIrKj6kP',
-
-  // Nomor kamar (= nama folder di Drive) untuk setiap tipe, tampil di bawah tombol
-  // supaya pengunjung tahu folder mana yang tipe A / B / C.
-  nomorKamar: {
-    A: 'A1, A2, A5, A7, B3, B7',
-    B: 'A14, B10',
-    C: 'A4'
-  }
+  fotoLengkap: 'https://drive.google.com/drive/folders/1HvKblNb0_2k60DMYfQ2qUue6sIrKj6kP'
 };

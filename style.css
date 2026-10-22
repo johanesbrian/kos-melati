@@ -664,12 +664,6 @@ section[id] { scroll-margin-top: 64px; }
   text-align: center;
   margin-top: 20px;
 }
-.foto-legend {
-  font-size: 0.78rem;
-  color: #777;
-  margin-top: 10px;
-  line-height: 1.5;
-}
 .kamar-foto-h img {
   width: 100%;
   height: 100% !important;
