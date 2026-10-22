@@ -13,7 +13,107 @@ body {
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
+[hidden] { display: none !important; }
 .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+section[id] { scroll-margin-top: 64px; }
+
+/* ---- HEADER / MENU ---- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #ececec;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #1a2e1a;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover { background: #f2f8f2; color: #1e6b1e; }
+.nav-links a.active { color: #1e6b1e; }
+.nav-links a.nav-cta { background: #1e6b1e; color: #fff; margin-left: 6px; }
+.nav-links a.nav-cta:hover { background: #155415; }
+
+.header-actions { display: flex; align-items: center; gap: 10px; }
+
+.lang-switch {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.lang-switch button {
+  border: none;
+  background: #fff;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #888;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+.lang-switch button.active { background: #1e6b1e; color: #fff; }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 38px;
+  height: 38px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.nav-toggle span { display: block; height: 2px; background: #333; border-radius: 1px; }
+
+/* ---- TOMBOL WHATSAPP MELAYANG ---- */
+.wa-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.08); }
 
 /* ---- HERO ---- */
 .hero {
@@ -228,7 +328,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 /* ---- FASILITAS ---- */
 .fas-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   border: 5px solid #e5e5e5;
   border-radius: 12px;
   overflow: hidden;
@@ -402,7 +502,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .cta-section {
   position: relative;
   background: #1a2e1a;
-  background-image: url('https://lh7-rt.googleusercontent.com/formsz/AN7BsVDk6L2icjmXYzummjsIWx61PVe23dr7mbByfYUwxlvSVZDhjlHypL7ImYLSYLuK0UDprFaHJxfF1WGsiaJ7w9Om3uPSCMLRObBFgtl2ajRpFkQbedZt9AQL9Q9DYT1s3ARJm81S70hroz7AliB7NSyzi1AIZuRc5jzbAwTT10FfV6bzeuNz5Gl-LnIjuIa3JNmDO7jFbQ9k8vMZ42vM=w1156');
+  background-image: url('images/atas-taman.JPG');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
@@ -515,7 +615,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 /* ---- PILIHAN KAMAR (horizontal: foto kiri, info kanan) ---- */
 .kamar-grid-center {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 1100px;
   margin: 18px auto 20px;
@@ -524,18 +624,51 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 .kamar-card-h {
   display: grid;
-  grid-template-columns: 42% 1fr;
+  grid-template-rows: 220px 1fr;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  min-height: 240px;
   transition: box-shadow 0.2s;
 }
 .kamar-card-h:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
 
 .kamar-foto-h {
+  position: relative;
   overflow: hidden;
+}
+
+.kamar-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: #1e6b1e;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+.kamar-status.is-full { background: rgba(40, 40, 40, 0.82); }
+
+.kamar-update {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 8px;
+}
+
+.foto-lengkap {
+  text-align: center;
+  margin-top: 20px;
+}
+.foto-legend {
+  font-size: 0.78rem;
+  color: #777;
+  margin-top: 10px;
+  line-height: 1.5;
 }
 .kamar-foto-h img {
   width: 100%;
@@ -602,6 +735,164 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .btn-booking:hover { background: #155415; }
 
+.kamar-nama {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+/* ---- BOOKING & KALKULATOR ---- */
+.sec-intro {
+  max-width: 560px;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.booking-form {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field-wide, .booking-form .check, .btn-submit, .form-note { grid-column: 1 / -1; }
+
+.field label, .field-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #333;
+}
+.field small { font-weight: 400; color: #999; }
+
+.field input, .field select, .field textarea {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  width: 100%;
+}
+.field textarea { resize: vertical; line-height: 1.5; }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: 2px solid #1e6b1e;
+  outline-offset: -1px;
+  border-color: #1e6b1e;
+}
+
+.seg { display: flex; gap: 8px; }
+.seg label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.seg label:has(input:checked) { border-color: #1e6b1e; background: #f2f8f2; color: #1e6b1e; }
+.seg input { accent-color: #1e6b1e; width: auto; padding: 0; margin: 0; }
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.88rem;
+  color: #333;
+  cursor: pointer;
+}
+.check input { width: 17px; height: 17px; accent-color: #1e6b1e; }
+
+.btn-submit {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  justify-content: center;
+}
+
+.form-note { font-size: 0.75rem; color: #888; text-align: center; line-height: 1.4; }
+
+.biaya-card {
+  background: #fff;
+  border: 1px solid #d4e8d4;
+  border-radius: 12px;
+  padding: 22px;
+  position: sticky;
+  top: 80px;
+}
+
+.biaya-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e6b1e;
+  margin-bottom: 12px;
+}
+
+.biaya-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.86rem;
+  color: #555;
+  padding: 7px 0;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.biaya-row strong { color: #111; text-align: right; }
+
+.biaya-total {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 14px 0 12px;
+  padding: 14px;
+  background: #f2f8f2;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: #555;
+}
+.biaya-total strong { font-size: 1.5rem; font-weight: 800; color: #1e6b1e; line-height: 1.2; }
+
+.biaya-note { font-size: 0.76rem; color: #777; line-height: 1.45; margin-top: 6px; }
+
+/* ---- LOKASI: tombol maps ---- */
+.btn-maps {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1e6b1e;
+  padding: 9px 14px;
+  border: 1.5px solid #1e6b1e;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.btn-maps:hover { background: #f2f8f2; }
+
 .kamar-note {
   text-align: center;
   font-size: 0.85rem;
@@ -660,8 +951,53 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .lb-close:hover { background: rgba(255,255,255,0.3); }
 
+/* Garis tipis berjalan di atas foto selama foto asli dimuat */
+#lightbox.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 40%;
+  background: #25d366;
+  z-index: 3;
+  animation: lb-load 1s ease-in-out infinite;
+}
+@keyframes lb-load {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(250%); }
+}
+
 .galeri-item img { cursor: pointer; }
 @media (max-width: 900px) {
+
+  /* MENU — jadi tombol garis tiga */
+  .nav-toggle { display: flex; }
+  .header-actions { margin-left: auto; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 10px 16px 16px;
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 11px 12px; font-size: 0.95rem; }
+  .nav-links a.nav-cta { margin: 6px 0 0; text-align: center; }
+
+  /* BOOKING — huruf input minimal 16px supaya iPhone tidak zoom otomatis saat mengetik */
+  .booking-grid { grid-template-columns: 1fr; }
+  .field input, .field select, .field textarea { font-size: 16px; }
+  .seg label { padding: 11px 10px; }
+  .map-wrap iframe { height: 300px; }
+  .biaya-card { position: static; order: -1; }
 
   /* HERO */
   .hero { min-height: 380px; }
@@ -705,11 +1041,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
   /* KAMAR — foto atas, info bawah */
   .kamar-grid-center { grid-template-columns: 1fr; padding: 0 16px; gap: 16px; }
-  .kamar-card-h {
-    grid-template-columns: 1fr;
-    grid-template-rows: 210px auto;
-    min-height: auto;
-  }
+  .kamar-card-h { grid-template-rows: 210px auto; }
   .kamar-foto-h { height: 210px; }
   .kamar-foto-h img { height: 210px !important; }
   .kamar-note { max-width: 100%; margin: 0 16px; }
@@ -745,7 +1077,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   /* HERO tombol full width */
   .hero-content h1 { font-size: 1.75rem; }
   .hero-btns { flex-direction: column; gap: 10px; }
-  .btn-dark, .btn-green-outline { width: 100%; justify-content: center; }
+  .btn-dark, .btn-green-outline { width: 100%; justify-content: center; text-align: center; }
 
   /* GALERI — 2 kolom */
   .galeri-grid { grid-template-columns: repeat(2, 1fr); }
@@ -754,6 +1086,20 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
   /* KAMAR note */
   .kamar-note { font-size: 0.78rem; }
+
+  /* HEADER & FORM */
+  .container { padding: 0 16px; }
+  .brand { font-size: 0.95rem; }
+  .booking-form { grid-template-columns: 1fr; padding: 18px; }
+  .wa-float { right: 14px; bottom: 14px; width: 52px; height: 52px; }
+
+  /* Tombol bahasa lebih tinggi untuk jari; latar CTA versi ringan */
+  .lang-switch button { padding: 9px 11px; font-size: 0.8rem; }
+  .cta-section { background-image: url('images/thumb/atas-taman.JPG'); }
+
+  /* LIGHTBOX — tombol tutup lebih besar untuk jari */
+  .lb-close { top: 14px; right: 14px; width: 44px; height: 44px; }
+  .lb-img { max-width: 96vw; max-height: 82vh; border-radius: 4px; }
 
   /* SECTION heading */
   .sec-header h2, .col-title { font-size: 1.2rem; }
