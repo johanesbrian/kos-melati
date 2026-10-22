@@ -43,7 +43,6 @@ if (lightbox) {
 
   document.querySelectorAll('.galeri-item img, .kamar-foto-h img').forEach(function (img) {
     img.addEventListener('click', function () {
-      alert('Klik gambar untuk memperbesar.');
       lbImg.src = this.src;
       lbImg.alt = this.alt;
       lightbox.classList.add('active');
