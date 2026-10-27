@@ -183,7 +183,7 @@ var EN = {
   'faq.a9': 'Yes, there is a shared kitchen on the 1st and 2nd floors. Cooking gas is shared through a group contribution.',
   'faq.q10': 'Is each room for one person?',
   'faq.a10': 'Yes, each room is for one person, except the larger corner room (Type C).',
-  'cta.title': 'Rooms Available',
+  'cta.title': 'Ask About Availability',
   'cta.text': 'Contact us now to check room availability and schedule a visit.',
   'cta.btn': 'Chat on WhatsApp Now'
 };
