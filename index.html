@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kos Putri Melati — Babarsari, Yogyakarta</title>
   <meta name="description" content="Kos putri di Babarsari, Yogyakarta. Kamar full furnished dengan AC, TV, kamar mandi dalam, WiFi, dan CCTV 24 jam. Dekat Atma Jaya, UPN, dan STIE YKPN. Mulai Rp1.150.000/bulan." />
-  <meta name="theme-color" content="#1e6b1e" />
+  <meta name="theme-color" content="#1F3D2B" />
   <link rel="canonical" href="https://kos-melati.pages.dev/" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BC%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3D2B'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-weight='600' fill='%23F7F3EC'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Huruf: Fraunces (judul) & Plus Jakarta Sans (teks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Pratinjau saat link dibagikan (WhatsApp, Instagram, Facebook) -->
   <meta property="og:type" content="website" />
@@ -61,7 +66,10 @@
 <!-- HEADER / MENU -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#beranda" class="brand">🌼 Kos Putri Melati</a>
+    <a href="#beranda" class="brand" aria-label="Kos Putri Melati — ke atas">
+      <span class="brand-kicker">Kos Putri</span>
+      <span class="brand-name">Melati</span>
+    </a>
     <nav class="nav-links" id="nav-links">
       <a href="#kamar" data-i18n="nav.kamar">Kamar</a>
       <a href="#fasilitas" data-i18n="nav.fasilitas">Fasilitas</a>
@@ -91,15 +99,21 @@
        srcset="images/thumb/taman-1.jpg 1200w, images/taman-1.jpg 2550w" sizes="100vw"
        alt="Taman di area Kos Putri Melati" fetchpriority="high" />
   <div class="hero-gradient"></div>
-  <div class="hero-content">
+  <div class="container hero-content">
     <p class="hero-eyebrow" data-i18n="hero.eyebrow">Kos Khusus Putri · Babarsari</p>
     <h1>Kos Putri Melati</h1>
     <p class="hero-subtitle" data-i18n="hero.subtitle">Hunian Nyaman dan Aman untuk<br>Mahasiswi di Babarsari, Yogyakarta</p>
     <p class="hero-desc" data-i18n="hero.desc">Lokasi strategis dekat kampus, fasilitas lengkap, lingkungan tenang, dan keamanan 24 jam.</p>
     <div class="hero-btns">
-      <a href="#kamar" class="btn-dark" data-i18n="hero.lihat">Lihat Kamar</a>
-      <a href="#booking" class="btn-green-outline" data-i18n="hero.booking">💬 Cek Harga &amp; Booking</a>
+      <a href="#booking" class="btn-primary" data-i18n="hero.booking">Cek Harga &amp; Booking</a>
+      <a href="#kamar" class="btn-ghost" data-i18n="hero.lihat">Lihat Kamar</a>
     </div>
+    <!-- Fakta singkat — semuanya dari data Mama / website -->
+    <ul class="hero-facts">
+      <li data-i18n="hero.f1">Mulai Rp1.150.000/bulan</li>
+      <li data-i18n="hero.f2">Khusus putri</li>
+      <li data-i18n="hero.f3">CCTV 24 jam</li>
+    </ul>
   </div>
 </section>
 
@@ -171,8 +185,8 @@
         <p data-i18n="tentang.p1">Kami menyediakan lingkungan yang aman, nyaman, dan kondusif untuk mahasiswi maupun karyawati yang membutuhkan hunian berkualitas di kawasan Babarsari.</p>
         <p data-i18n="tentang.p2">Dengan fasilitas lengkap, lokasi strategis, serta lingkungan yang bersih dan tenang, kami berkomitmen memberikan pengalaman tinggal terbaik bagi Anda.</p>
         <div class="tentang-info-list">
-          <div class="ti-row"><span>📞</span><span>0877-3953-5551 (Ibu Indri)</span></div>
-          <div class="ti-row"><span>🏠</span><span data-i18n="tentang.pemilik">Pemilik kos tinggal satu halaman dengan kos, dan ada penjaga kos pada pagi &amp; malam hari.</span></div>
+          <div class="ti-row"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg><span>0877-3953-5551 (Ibu Indri)</span></div>
+          <div class="ti-row"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span data-i18n="tentang.pemilik">Pemilik kos tinggal satu halaman dengan kos, dan ada penjaga kos pada pagi &amp; malam hari.</span></div>
         </div>
       </div>
     </div>
@@ -182,7 +196,7 @@
   <section class="section sec-gray" id="fasilitas">
     <div class="container">
       <div class="sec-header">
-        <h2 data-i18n="fas.title">FASILITAS</h2>
+        <h2 data-i18n="fas.title">Fasilitas</h2>
         <div class="sec-line"></div>
       </div>
 
@@ -308,7 +322,7 @@
   <div class="kamar-section-wrap">
     <div class="container">
       <div class="sec-header">
-        <h2 data-i18n="kamar.title">PILIHAN KAMAR</h2>
+        <h2 data-i18n="kamar.title">Pilihan Kamar</h2>
         <div class="sec-line"></div>
       </div>
     </div>
@@ -384,12 +398,12 @@
   </div>
 </div>
     <div class="container">
-      <p class="kamar-note" data-i18n="kamar.note">💡 Pembayaran per 3 atau 6 bulan di muka · 1 kamar untuk 1 orang (kecuali kamar tipe C)</p>
+      <p class="kamar-note" data-i18n="kamar.note">Pembayaran per 3 atau 6 bulan di muka · 1 kamar untuk 1 orang (kecuali kamar tipe C)</p>
       <p class="kamar-update" id="kamar-update" hidden></p>
 
       <!-- Tombol foto lengkap (Google Drive) — link diatur di content.js -->
       <div class="foto-lengkap" id="foto-lengkap" hidden>
-        <a class="btn-maps" id="foto-lengkap-link" href="#" target="_blank" rel="noopener" data-i18n="kamar.drive">📷 Lihat Foto Lengkap Semua Kamar</a>
+        <a class="btn-maps" id="foto-lengkap-link" href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l2-3h4l2 3"/><circle cx="12" cy="13.5" r="3.5"/></svg><span data-i18n="kamar.drive">Lihat Foto Lengkap Semua Kamar</span></a>
       </div>
     </div>
 </section>
@@ -398,7 +412,7 @@
   <section class="section sec-gray" id="booking">
     <div class="container">
       <div class="sec-header">
-        <h2 data-i18n="bk.title">BOOKING &amp; HITUNG BIAYA</h2>
+        <h2 data-i18n="bk.title">Booking &amp; Hitung Biaya</h2>
         <div class="sec-line"></div>
         <p class="sec-intro" data-i18n="bk.intro">Isi data singkat di bawah. Pesan WhatsApp untuk Ibu Indri akan tersusun otomatis.</p>
       </div>
@@ -432,6 +446,21 @@
             <input type="checkbox" name="survei" checked />
             <span data-i18n="bk.survei">Saya ingin survei / lihat kamar dulu</span>
           </label>
+          <div class="survei-jadwal field-wide" id="survei-jadwal">
+            <div class="field">
+              <label for="bk-tgl" data-i18n="bk.tgl">Tanggal Survei <small>(opsional)</small></label>
+              <input id="bk-tgl" name="tgl" type="date" />
+            </div>
+            <div class="field">
+              <label for="bk-waktu" data-i18n="bk.waktu">Waktu <small>(opsional)</small></label>
+              <select id="bk-waktu" name="waktu">
+                <option value="" data-i18n="bk.w0">Bebas</option>
+                <option value="pagi" data-i18n="bk.w1">Pagi</option>
+                <option value="siang" data-i18n="bk.w2">Siang</option>
+                <option value="sore" data-i18n="bk.w3">Sore</option>
+              </select>
+            </div>
+          </div>
           <div class="field field-wide">
             <label for="bk-catatan" data-i18n="bk.catatan">Pertanyaan Lain <small>(opsional)</small></label>
             <textarea id="bk-catatan" name="catatan" rows="3"></textarea>
@@ -452,8 +481,13 @@
             <span data-i18n="bk.r.total">Total pembayaran awal</span>
             <strong id="sum-total">–</strong>
           </div>
-          <p class="biaya-note" data-i18n="bk.listrik">⚡ Belum termasuk listrik — setiap kamar memakai token listrik sendiri.</p>
+          <p class="biaya-note" data-i18n="bk.listrik">Belum termasuk listrik — setiap kamar memakai token listrik sendiri.</p>
           <p class="biaya-note" id="sum-listrik" hidden></p>
+          <a href="#" class="btn-share" id="btn-share" target="_blank" rel="noopener">
+            <svg width="16" height="16"><use href="#ico-wa"/></svg>
+            <span data-i18n="bk.share">Bagikan ke Orang Tua</span>
+          </a>
+          <p class="share-note" data-i18n="bk.share.note">Kirim ringkasan kamar &amp; biaya ini ke orang tua lewat WhatsApp.</p>
         </aside>
       </div>
     </div>
@@ -467,27 +501,34 @@
         <div class="sec-line"></div>
       </div>
 
+      <div class="galeri-filter" role="group" aria-label="Filter foto">
+        <button type="button" class="active" data-filter="semua" aria-pressed="true" data-i18n="gf.semua">Semua</button>
+        <button type="button" data-filter="kamar" aria-pressed="false" data-i18n="gf.kamar">Kamar</button>
+        <button type="button" data-filter="dapur" aria-pressed="false" data-i18n="gf.dapur">Dapur</button>
+        <button type="button" data-filter="taman" aria-pressed="false" data-i18n="gf.taman">Taman &amp; Area</button>
+        <button type="button" data-filter="parkir" aria-pressed="false" data-i18n="gf.parkir">Parkir &amp; Ruang Tamu</button>
+      </div>
       <div class="galeri-grid">
-        <div class="galeri-item"><img src="images/thumb/kolam.JPG" data-full="images/kolam.JPG" alt="Taman dan kolam di tengah area kos" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/atas-taman.JPG" data-full="images/atas-taman.JPG" alt="Taman kos dilihat dari lantai atas" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/dapur-atas-wide.JPG" data-full="images/dapur-atas-wide.JPG" alt="Dapur bersama di lantai atas" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/parkiran-motor.JPG" data-full="images/parkiran-motor.JPG" alt="Area parkir motor penghuni" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/IMG_0263.JPG" data-full="images/IMG_0263.JPG" alt="Lorong kamar di dalam bangunan" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/meja-1.jpg" data-full="images/meja-1.jpg" alt="Meja belajar, kursi, TV, dan rak dinding di kamar" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/atas-kiri.JPG" data-full="images/atas-kiri.JPG" alt="Deretan kamar di lantai atas" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/lemari-kamar.jpeg" data-full="images/lemari-kamar.jpeg" alt="Lemari pakaian di kamar" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/kolam-kiri.JPG" data-full="images/kolam-kiri.JPG" alt="Taman kos dari sisi kiri" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/kamar-tipe-a-dan-b-2.jpeg" data-full="images/kamar-tipe-a-dan-b-2.jpeg" alt="Bagian dalam kamar dengan tempat tidur" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/IMG_0262.JPG" data-full="images/IMG_0262.JPG" alt="Selasar kamar lantai atas" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/kolam-kanan.JPG" data-full="images/kolam-kanan.JPG" alt="Taman kos dari sisi kanan" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/kamar-tipe-b-1.jpeg" data-full="images/kamar-tipe-b-1.jpeg" alt="Contoh kamar dengan meja dan tempat tidur" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/IMG_0255.JPG" data-full="images/IMG_0255.JPG" alt="Kamar mandi dalam" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/atas-kanan.JPG" data-full="images/atas-kanan.JPG" alt="Pemandangan dari lantai atas" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/dapur-atas-2.jpeg" data-full="images/dapur-atas-2.jpeg" alt="Dapur bersama lantai atas" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/meja-2.jpg" data-full="images/meja-2.jpg" alt="Meja belajar di kamar" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/dapur-bawah-2.JPG" data-full="images/dapur-bawah-2.JPG" alt="Dapur bersama lantai bawah dengan kompor dan rak piring" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/view-pintu-bawah.jpg" data-full="images/view-pintu-bawah.jpg" alt="Pintu kamar lantai bawah menghadap taman" loading="lazy" /></div>
-        <div class="galeri-item"><img src="images/thumb/ruang-tamu-parkiran-motor-1.jpeg" data-full="images/ruang-tamu-parkiran-motor-1.jpeg" alt="Ruang tamu dan parkir motor" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam.JPG" data-full="images/kolam.JPG" alt="Taman dan kolam di tengah area kos" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-taman.JPG" data-full="images/atas-taman.JPG" alt="Taman kos dilihat dari lantai atas" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-atas-wide.JPG" data-full="images/dapur-atas-wide.JPG" alt="Dapur bersama di lantai atas" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="parkir"><img src="images/thumb/parkiran-motor.JPG" data-full="images/parkiran-motor.JPG" alt="Area parkir motor penghuni" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/IMG_0263.JPG" data-full="images/IMG_0263.JPG" alt="Lorong kamar di dalam bangunan" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/meja-1.jpg" data-full="images/meja-1.jpg" alt="Meja belajar, kursi, TV, dan rak dinding di kamar" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-kiri.JPG" data-full="images/atas-kiri.JPG" alt="Deretan kamar di lantai atas" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/lemari-kamar.jpeg" data-full="images/lemari-kamar.jpeg" alt="Lemari pakaian di kamar" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam-kiri.JPG" data-full="images/kolam-kiri.JPG" alt="Taman kos dari sisi kiri" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/kamar-tipe-a-dan-b-2.jpeg" data-full="images/kamar-tipe-a-dan-b-2.jpeg" alt="Bagian dalam kamar dengan tempat tidur" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/IMG_0262.JPG" data-full="images/IMG_0262.JPG" alt="Selasar kamar lantai atas" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam-kanan.JPG" data-full="images/kolam-kanan.JPG" alt="Taman kos dari sisi kanan" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/kamar-tipe-b-1.jpeg" data-full="images/kamar-tipe-b-1.jpeg" alt="Contoh kamar dengan meja dan tempat tidur" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/IMG_0255.JPG" data-full="images/IMG_0255.JPG" alt="Kamar mandi dalam" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-kanan.JPG" data-full="images/atas-kanan.JPG" alt="Pemandangan dari lantai atas" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-atas-2.jpeg" data-full="images/dapur-atas-2.jpeg" alt="Dapur bersama lantai atas" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/meja-2.jpg" data-full="images/meja-2.jpg" alt="Meja belajar di kamar" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-bawah-2.JPG" data-full="images/dapur-bawah-2.JPG" alt="Dapur bersama lantai bawah dengan kompor dan rak piring" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/view-pintu-bawah.jpg" data-full="images/view-pintu-bawah.jpg" alt="Pintu kamar lantai bawah menghadap taman" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="parkir"><img src="images/thumb/ruang-tamu-parkiran-motor-1.jpeg" data-full="images/ruang-tamu-parkiran-motor-1.jpeg" alt="Ruang tamu dan parkir motor" loading="lazy" /></div>
       </div>
     </div>
   </section>
@@ -495,8 +536,10 @@
   <!-- LOC -->
 <section class="section sec-gray" id="lokasi">
   <div class="container">
-    <h2 class="col-title" data-i18n="lok.title">Lokasi Strategis</h2>
-    <div class="col-line"></div>
+    <div class="sec-header">
+      <h2 data-i18n="lok.title">Lokasi Strategis</h2>
+      <div class="sec-line"></div>
+    </div>
     <div class="lokasi-full-grid">
       <div>
         <ul class="lok-list">
@@ -510,7 +553,7 @@
           <li><span class="lok-dot"></span>Ambarrukmo Plaza</li>
           <li><span class="lok-dot"></span>Coffee Shop</li>
         </ul>
-        <a class="btn-maps" href="https://www.google.com/maps?cid=6187899449255728166" target="_blank" rel="noopener" data-i18n="lok.buka">📍 Buka di Google Maps</a>
+        <a class="btn-maps" href="https://www.google.com/maps?cid=6187899449255728166" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-i18n="lok.buka">Buka di Google Maps</span></a>
       </div>
       <div class="map-wrap">
         <iframe
@@ -533,76 +576,46 @@
         <div class="sec-line"></div>
       </div>
       <div class="faq-grid">
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q1">Apakah boleh membawa kendaraan?</p>
-            <p class="faq-a" data-i18n="faq.a1">Ya, khusus sepeda motor. Tersedia area parkir motor untuk penghuni.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q2">Apakah ada CCTV?</p>
-            <p class="faq-a" data-i18n="faq.a2">Ya, seluruh area kos dipantau CCTV 24 jam untuk keamanan penghuni.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q3">Apakah listrik sudah termasuk?</p>
-            <p class="faq-a" data-i18n="faq.a3">Listrik tidak termasuk biaya sewa. Setiap kamar menggunakan token listrik mandiri.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q4">Apakah tersedia WiFi?</p>
-            <p class="faq-a" data-i18n="faq.a4">Ya. WiFi berkapasitas standar untuk komunikasi, media sosial, dan searching — bukan untuk streaming YouTube dan sejenisnya.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q5">Apakah ada jam malam?</p>
-            <p class="faq-a" data-i18n="faq.a5">Setiap penghuni membawa kunci kamar dan gerbang. Karena berada di lingkungan kompleks, portal kompleks ditutup pukul 22.00 WIB — jika pulang lebih malam, sampaikan izin kepada security kompleks.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q6">Bolehkah menerima tamu laki-laki?</p>
-            <p class="faq-a" data-i18n="faq.a6">Boleh, tetapi hanya di area ruang tamu. Tamu laki-laki dilarang masuk kamar.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q7">Apakah keluarga boleh menginap?</p>
-            <p class="faq-a" data-i18n="faq.a7">Orang tua dan saudara kandung boleh menginap maksimal 3 hari, tanpa biaya.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q8">Apakah boleh membawa hewan peliharaan?</p>
-            <p class="faq-a" data-i18n="faq.a8">Tidak. Penghuni dilarang membawa dan memelihara binatang, walaupun tidak keluar kamar.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q9">Apakah ada dapur?</p>
-            <p class="faq-a" data-i18n="faq.a9">Ada dapur bersama di lantai 1 dan lantai 2. Gas dapur menggunakan iuran bersama.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-icon">?</div>
-          <div>
-            <p class="faq-q" data-i18n="faq.q10">Apakah 1 kamar untuk 1 orang?</p>
-            <p class="faq-a" data-i18n="faq.a10">Ya, setiap kamar untuk 1 orang, kecuali kamar pojok (Tipe C) yang lebih besar.</p>
-          </div>
-        </div>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q1">Apakah boleh membawa kendaraan?</summary>
+          <p class="faq-a" data-i18n="faq.a1">Ya, khusus sepeda motor. Tersedia area parkir motor untuk penghuni.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q2">Apakah ada CCTV?</summary>
+          <p class="faq-a" data-i18n="faq.a2">Ya, seluruh area kos dipantau CCTV 24 jam untuk keamanan penghuni.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q3">Apakah listrik sudah termasuk?</summary>
+          <p class="faq-a" data-i18n="faq.a3">Listrik tidak termasuk biaya sewa. Setiap kamar menggunakan token listrik mandiri.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q4">Apakah tersedia WiFi?</summary>
+          <p class="faq-a" data-i18n="faq.a4">Ya. WiFi berkapasitas standar untuk komunikasi, media sosial, dan searching — bukan untuk streaming YouTube dan sejenisnya.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q5">Apakah ada jam malam?</summary>
+          <p class="faq-a" data-i18n="faq.a5">Setiap penghuni membawa kunci kamar dan gerbang. Karena berada di lingkungan kompleks, portal kompleks ditutup pukul 22.00 WIB — jika pulang lebih malam, sampaikan izin kepada security kompleks.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q6">Bolehkah menerima tamu laki-laki?</summary>
+          <p class="faq-a" data-i18n="faq.a6">Boleh, tetapi hanya di area ruang tamu. Tamu laki-laki dilarang masuk kamar.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q7">Apakah keluarga boleh menginap?</summary>
+          <p class="faq-a" data-i18n="faq.a7">Orang tua dan saudara kandung boleh menginap maksimal 3 hari, tanpa biaya.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q8">Apakah boleh membawa hewan peliharaan?</summary>
+          <p class="faq-a" data-i18n="faq.a8">Tidak. Penghuni dilarang membawa dan memelihara binatang, walaupun tidak keluar kamar.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q9">Apakah ada dapur?</summary>
+          <p class="faq-a" data-i18n="faq.a9">Ada dapur bersama di lantai 1 dan lantai 2. Gas dapur menggunakan iuran bersama.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q" data-i18n="faq.q10">Apakah 1 kamar untuk 1 orang?</summary>
+          <p class="faq-a" data-i18n="faq.a10">Ya, setiap kamar untuk 1 orang, kecuali kamar pojok (Tipe C) yang lebih besar.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -625,6 +638,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
+      <p class="footer-brand"><span class="brand-kicker">Kos Putri</span><span class="brand-name">Melati</span></p>
       <p class="footer-copy">© 2026 Kos Putri Melati. All Rights Reserved.</p>
     </div>
   </footer>
@@ -634,10 +648,13 @@
   <svg width="28" height="28"><use href="#ico-wa"/></svg>
 </a>
 
-<div id="lightbox">
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto">
   <div class="lb-overlay"></div>
   <img class="lb-img" src="" alt=""/>
   <button class="lb-close" aria-label="Tutup">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Foto sebelumnya">‹</button>
+  <button class="lb-nav lb-next" aria-label="Foto berikutnya">›</button>
+  <p class="lb-count" aria-live="polite"></p>
 </div>
 
   <script src="content.js"></script>

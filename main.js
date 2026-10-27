@@ -21,9 +21,19 @@ var TEXT = {
     msgBayar: 'Pembayaran',
     msgDiMuka: 'bulan di muka',
     msgSurvei: 'Saya ingin survei/lihat kamar terlebih dahulu.',
+    msgJadwal: 'Rencana survei',
+    waktu_pagi: 'pagi',
+    waktu_siang: 'siang',
+    waktu_sore: 'sore',
+    shareHalo: 'Halo, aku lagi lihat Kos Putri Melati di Babarsari, Yogyakarta (kos khusus putri).',
+    shareKamar: 'Pilihan kamar',
+    shareBayar: 'Bayar {n} bulan di muka',
+    shareListrik: '(belum termasuk listrik token)',
+    shareFasilitas: 'Fasilitas: AC, TV, kamar mandi dalam, full furnished, WiFi, CCTV 24 jam.',
+    shareLink: 'Info lengkap & foto:',
     msgCatatan: 'Catatan',
     msgTutup: 'Apakah kamar masih tersedia? Terima kasih.',
-    listrik: '⚡ Perkiraan listrik: ',
+    listrik: 'Perkiraan listrik: ',
     tersedia: 'Tersedia',
     penuh: 'Penuh',
     optPenuh: ' (penuh)',
@@ -42,9 +52,19 @@ var TEXT = {
     msgBayar: 'Payment',
     msgDiMuka: 'months in advance',
     msgSurvei: 'I would like to visit and see the room first.',
+    msgJadwal: 'Planned visit',
+    waktu_pagi: 'morning',
+    waktu_siang: 'midday',
+    waktu_sore: 'afternoon',
+    shareHalo: 'Hi, I\'m looking at Kos Putri Melati in Babarsari, Yogyakarta (a women-only boarding house).',
+    shareKamar: 'Room',
+    shareBayar: '{n} months paid in advance',
+    shareListrik: '(electricity not included)',
+    shareFasilitas: 'Facilities: AC, TV, private bathroom, fully furnished, WiFi, 24-hour CCTV.',
+    shareLink: 'Details & photos:',
     msgCatatan: 'Notes',
     msgTutup: 'Is the room still available? Thank you.',
-    listrik: '⚡ Estimated electricity: ',
+    listrik: 'Estimated electricity: ',
     tersedia: 'Available',
     penuh: 'Full',
     optPenuh: ' (full)',
@@ -65,7 +85,10 @@ var EN = {
   'hero.subtitle': 'Comfortable and Safe Housing for<br>Female Students in Babarsari, Yogyakarta',
   'hero.desc': 'Strategic location near campuses, complete facilities, a quiet neighbourhood, and 24-hour security.',
   'hero.lihat': 'See Rooms',
-  'hero.booking': '💬 Prices &amp; Booking',
+  'hero.booking': 'Prices &amp; Booking',
+  'hero.f1': 'From Rp1,150,000/month',
+  'hero.f2': 'Women only',
+  'hero.f3': '24-hour CCTV',
   'stat.kamar': 'Rooms',
   'stat.kamar.sub': 'Fully Furnished',
   'stat.lokasi': 'Strategic Location',
@@ -79,7 +102,7 @@ var EN = {
   'tentang.p1': 'We offer a safe, comfortable and supportive place to live for female students and young working women looking for quality housing in the Babarsari area.',
   'tentang.p2': 'With complete facilities, a strategic location, and a clean, quiet environment, we are committed to giving you the best possible stay.',
   'tentang.pemilik': 'The owners live on the same grounds, and a caretaker is on site in the morning and at night.',
-  'fas.title': 'FACILITIES',
+  'fas.title': 'Facilities',
   'fas.tidur': 'Bed',
   'fas.lemari': 'Wardrobe',
   'fas.meja': 'Study Desk',
@@ -89,7 +112,7 @@ var EN = {
   'fas.jemur': 'Laundry Drying Area',
   'fas.dapur': 'Shared Kitchen',
   'fas.apar': 'Fire Extinguisher on Every Floor',
-  'kamar.title': 'ROOM OPTIONS',
+  'kamar.title': 'Room Options',
   'kamar.a': 'Type A Room',
   'kamar.b': 'Type B Room',
   'kamar.c': 'Type C Room',
@@ -100,9 +123,9 @@ var EN = {
   'kamar.luas': 'The largest room',
   'kamar.berdua': 'Can be shared by more than 1 person',
   'kamar.pilih': 'Choose This Room',
-  'kamar.drive': '📷 See Full Photos of All Rooms',
-  'kamar.note': '💡 Rent is paid 3 or 6 months in advance · 1 room per person, except the room type C',
-  'bk.title': 'BOOKING &amp; COST ESTIMATE',
+  'kamar.drive': 'See Full Photos of All Rooms',
+  'kamar.note': 'Rent is paid 3 or 6 months in advance · 1 room per person, except the room type C',
+  'bk.title': 'Booking &amp; Cost Estimate',
   'bk.intro': 'Fill in the short form below. A WhatsApp message to Bu Indri will be written for you.',
   'bk.nama': 'Full Name',
   'bk.nama.ph': 'e.g. Rina Putri',
@@ -122,10 +145,23 @@ var EN = {
   'bk.r.harga': 'Price per month',
   'bk.r.durasi': 'Paid in advance',
   'bk.r.total': 'Initial payment',
-  'bk.listrik': '⚡ Electricity not included — each room uses its own prepaid token.',
+  'bk.listrik': 'Electricity not included — each room uses its own prepaid token.',
+  'bk.tgl': 'Visit Date <small>(optional)</small>',
+  'bk.waktu': 'Time <small>(optional)</small>',
+  'bk.w0': 'Any time',
+  'bk.w1': 'Morning',
+  'bk.w2': 'Midday',
+  'bk.w3': 'Afternoon',
+  'bk.share': 'Share with Parents',
+  'bk.share.note': 'Send this room &amp; cost summary to your parents via WhatsApp.',
+  'gf.semua': 'All',
+  'gf.kamar': 'Rooms',
+  'gf.dapur': 'Kitchen',
+  'gf.taman': 'Garden &amp; Grounds',
+  'gf.parkir': 'Parking &amp; Lounge',
   'galeri.title': 'Gallery',
   'lok.title': 'Strategic Location',
-  'lok.buka': '📍 Open in Google Maps',
+  'lok.buka': 'Open in Google Maps',
   'faq.title': 'Frequently Asked Questions',
   'faq.q1': 'Can I bring a vehicle?',
   'faq.a1': 'Yes, motorbikes only. There is a parking area for residents\' motorbikes.',
@@ -310,6 +346,32 @@ function updateSummary() {
   var el = document.getElementById('sum-listrik');
   el.hidden = !listrik;
   el.textContent = listrik ? t('listrik') + listrik : '';
+  updateShare(r, m);
+}
+
+// ---- Bagikan ke orang tua: ringkasan kamar & biaya lewat WhatsApp ----
+// wa.me tanpa nomor → WhatsApp membuka daftar kontak untuk dipilih
+function updateShare(r, m) {
+  var btn = document.getElementById('btn-share');
+  if (!btn) return;
+  var canon = document.querySelector('link[rel="canonical"]');
+  var lines = [
+    t('shareHalo'),
+    '',
+    t('shareKamar') + ': ' + roomName(r) + ' — ' + rupiah(r.price) + ' ' + t('perBulan'),
+    t('shareBayar').replace('{n}', m) + ': ' + rupiah(r.price * m) + ' ' + t('shareListrik'),
+    t('shareFasilitas'),
+    '',
+    t('shareLink') + ' ' + (canon ? canon.href : location.href)
+  ];
+  btn.href = 'https://wa.me/?text=' + encodeURIComponent(lines.join('\n'));
+}
+
+function formatDay(v) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return v;
+  var p = v.split('-');
+  return new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]))
+    .toLocaleDateString(lang === 'en' ? 'en-GB' : 'id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 }
 
 function formatMonth(v) {
@@ -326,6 +388,16 @@ if (form) {
   form.addEventListener('input', updateSummary);
   form.addEventListener('change', updateSummary);
 
+  // Jadwal survei hanya tampil jika kotak "ingin survei" dicentang
+  var jadwal = document.getElementById('survei-jadwal');
+  function toggleJadwal() { if (jadwal) jadwal.hidden = !form.survei.checked; }
+  form.survei.addEventListener('change', toggleJadwal);
+  toggleJadwal();
+  if (form.tgl) {
+    var today = new Date();
+    form.tgl.min = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!form.reportValidity()) return;
@@ -337,7 +409,13 @@ if (form) {
     lines.push(t('msgKamar') + ': ' + roomName(r) + ' (' + rupiah(r.price) + ' ' + t('perBulan') + ')');
     if (form.masuk.value) lines.push(t('msgMasuk') + ': ' + formatMonth(form.masuk.value));
     lines.push(t('msgBayar') + ': ' + m + ' ' + t('msgDiMuka') + ' (' + rupiah(r.price * m) + ')');
-    if (form.survei.checked) lines.push('', t('msgSurvei'));
+    if (form.survei.checked) {
+      lines.push('', t('msgSurvei'));
+      var when = [];
+      if (form.tgl && form.tgl.value) when.push(formatDay(form.tgl.value));
+      if (form.waktu && form.waktu.value) when.push(t('waktu_' + form.waktu.value));
+      if (when.length) lines.push(t('msgJadwal') + ': ' + when.join(', '));
+    }
     if (form.catatan.value.trim()) lines.push('', t('msgCatatan') + ': ' + form.catatan.value.trim());
     lines.push('', t('msgTutup'));
     // Lewat link biasa, bukan window.open, supaya tidak diblokir browser HP (terutama iPhone)
@@ -371,42 +449,114 @@ document.querySelectorAll('.kamar-card-h, .fas-item, .faq-item, .galeri-item, .l
   observer.observe(el);
 });
 
-// ---- Lightbox ----
+// ---- Filter galeri ----
+var filterBtns = document.querySelectorAll('.galeri-filter button');
+filterBtns.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var f = this.dataset.filter;
+    filterBtns.forEach(function (b) {
+      b.classList.toggle('active', b === btn);
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+    document.querySelectorAll('.galeri-item').forEach(function (item) {
+      item.hidden = f !== 'semua' && item.dataset.cat !== f;
+      if (!item.hidden) item.classList.add('visible');
+    });
+  });
+});
+
+// ---- Lightbox: foto besar, bisa digeser ke foto berikutnya ----
 var lightbox = document.getElementById('lightbox');
 if (lightbox) {
-  var lbImg = document.querySelector('.lb-img');
-  var lbOverlay = document.querySelector('.lb-overlay');
-  var lbClose = document.querySelector('.lb-close');
+  var lbImg = lightbox.querySelector('.lb-img');
+  var lbOverlay = lightbox.querySelector('.lb-overlay');
+  var lbClose = lightbox.querySelector('.lb-close');
+  var lbPrev = lightbox.querySelector('.lb-prev');
+  var lbNext = lightbox.querySelector('.lb-next');
+  var lbCount = lightbox.querySelector('.lb-count');
+  var lbList = [];
+  var lbIndex = 0;
+  var lbReturn = null;
 
   // Tampilkan pratinjau dulu (cepat di HP), lalu ganti ke foto asli setelah selesai dimuat
+  function showLb(i) {
+    lbIndex = (i + lbList.length) % lbList.length;
+    var img = lbList[lbIndex];
+    var full = img.dataset.full || img.src;
+    lbImg.src = img.currentSrc || img.src;
+    lbImg.alt = img.alt;
+    lightbox.classList.add('loading');
+    var multi = lbList.length > 1;
+    lbPrev.hidden = lbNext.hidden = lbCount.hidden = !multi;
+    lbCount.textContent = (lbIndex + 1) + ' / ' + lbList.length;
+    var token = String(Math.random());
+    lightbox.dataset.token = token;
+    var hi = new Image();
+    hi.onload = function () {
+      // Jangan ganti jika lightbox sudah ditutup atau sudah pindah ke foto lain
+      if (lightbox.classList.contains('active') && lightbox.dataset.token === token) lbImg.src = full;
+      if (lightbox.dataset.token === token) lightbox.classList.remove('loading');
+    };
+    hi.onerror = function () { lightbox.classList.remove('loading'); };
+    hi.src = full;
+  }
+
+  function openLb(img, viaKeyboard) {
+    // Foto galeri: bisa digeser ke foto lain yang sedang tampil (sesuai filter)
+    var inGallery = img.closest('.galeri-item');
+    lbList = inGallery
+      ? Array.prototype.filter.call(document.querySelectorAll('.galeri-item img'), function (x) { return !x.closest('.galeri-item').hidden; })
+      : [img];
+    lbReturn = img;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    showLb(lbList.indexOf(img));
+    // Fokus pindah ke tombol tutup hanya untuk pengguna keyboard (tanpa bingkai saat diklik mouse)
+    if (viaKeyboard) lbClose.focus();
+  }
+
+  function closeLb() {
+    if (!lightbox.classList.contains('active')) return;
+    lightbox.classList.remove('active', 'loading');
+    document.body.style.overflow = '';
+    if (lbReturn && lbReturn === document.activeElement) lbReturn.blur();
+    if (lbReturn && lightbox.dataset.kb === '1') lbReturn.focus({ preventScroll: true });
+  }
+
   document.querySelectorAll('.galeri-item img, .kamar-foto-h img').forEach(function (img) {
-    img.addEventListener('click', function () {
-      var full = this.dataset.full || this.src;
-      lbImg.src = this.currentSrc || this.src;
-      lbImg.alt = this.alt;
-      lightbox.classList.add('active', 'loading');
-      document.body.style.overflow = 'hidden';
-      var token = String(Math.random());
-      lightbox.dataset.token = token;
-      var hi = new Image();
-      hi.onload = function () {
-        // Jangan ganti jika lightbox sudah ditutup atau sudah membuka foto lain
-        if (lightbox.classList.contains('active') && lightbox.dataset.token === token) lbImg.src = full;
-        lightbox.classList.remove('loading');
-      };
-      hi.onerror = function () { lightbox.classList.remove('loading'); };
-      hi.src = full;
+    // Bisa dibuka juga lewat keyboard (Tab + Enter)
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.addEventListener('click', function () { lightbox.dataset.kb = '0'; openLb(this, false); });
+    img.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); lightbox.dataset.kb = '1'; openLb(this, true); }
     });
   });
 
-  function closeLb() {
-    lightbox.classList.remove('active', 'loading');
-    document.body.style.overflow = '';
-  }
+  lbPrev.addEventListener('click', function () { showLb(lbIndex - 1); });
+  lbNext.addEventListener('click', function () { showLb(lbIndex + 1); });
+  lbOverlay.addEventListener('click', closeLb);
+  lbClose.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLb();
+    else if (e.key === 'ArrowLeft' && lbList.length > 1) showLb(lbIndex - 1);
+    else if (e.key === 'ArrowRight' && lbList.length > 1) showLb(lbIndex + 1);
+  });
 
-  if (lbOverlay) lbOverlay.addEventListener('click', closeLb);
-  if (lbClose) lbClose.addEventListener('click', closeLb);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+  // Geser (swipe) kiri/kanan di HP
+  var touchX = null, touchY = null;
+  lightbox.addEventListener('touchstart', function (e) {
+    touchX = e.touches[0].clientX;
+    touchY = e.touches[0].clientY;
+  }, { passive: true });
+  lightbox.addEventListener('touchend', function (e) {
+    if (touchX === null || lbList.length < 2) return;
+    var dx = e.changedTouches[0].clientX - touchX;
+    var dy = e.changedTouches[0].clientY - touchY;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) showLb(lbIndex + (dx < 0 ? 1 : -1));
+    touchX = null;
+  });
 }
 
 // ---- Mulai ----
