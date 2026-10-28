@@ -61,6 +61,8 @@
 
 <!-- Ikon WhatsApp (dipakai ulang lewat <use>) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ico-cek" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ico-ukuran" viewBox="0 0 24 24"><path d="M4 9V4h5M20 15v5h-5M4 4l7 7M20 20l-7-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="ico-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
 </svg>
 
@@ -98,7 +100,7 @@
   <!-- HP memuat versi 1200px, layar besar memuat foto asli -->
   <img class="hero-bg" src="images/taman-1.jpg"
        srcset="images/thumb/taman-1.jpg 1200w, images/taman-1.jpg 2550w" sizes="100vw"
-       alt="Taman di area Kos Putri Melati" fetchpriority="high" />
+       alt="Taman di area Kos Putri Melati" fetchpriority="high" width="2550" height="1698" />
   <div class="hero-gradient"></div>
   <div class="container hero-content">
     <p class="hero-eyebrow" data-i18n="hero.eyebrow">Kos Khusus Putri · Babarsari</p>
@@ -178,7 +180,7 @@
       <div class="tentang-foto">
         <img src="images/kolam.JPG"
              srcset="images/thumb/kolam.JPG 1200w, images/kolam.JPG 5712w" sizes="(max-width: 900px) 100vw, 540px"
-             alt="Taman dan kolam di tengah area Kos Putri Melati" loading="lazy" />
+             alt="Taman dan kolam di tengah area Kos Putri Melati" loading="lazy" width="5712" height="4284" decoding="async" />
       </div>
       <div class="tentang-teks">
         <p class="label-hijau" data-i18n="tentang.label">TENTANG KAMI</p>
@@ -333,18 +335,19 @@
        Status ketersediaan (Tersedia / Penuh) diatur di content.js -->
   <div class="kamar-card-h" data-room="A" data-price="1350000">
     <div class="kamar-foto-h">
-      <img src="images/thumb/pilihan-kamar-a.jpg" data-full="images/pilihan-kamar-a.jpg" alt="Kamar Tipe A dengan tempat tidur, AC, TV, dan meja belajar" loading="lazy" />
+      <img src="images/thumb/pilihan-kamar-a.jpg" data-full="images/pilihan-kamar-a.jpg" alt="Kamar Tipe A dengan tempat tidur, AC, TV, dan meja belajar" loading="lazy" width="1200" height="900" decoding="async" />
       <span class="kamar-status" hidden></span>
     </div>
     <div class="kamar-info-h">
+      <p class="kamar-tag" data-i18n="kamar.tag.a">Ukuran menengah</p>
       <h3 class="kamar-nama" data-i18n="kamar.a">Kamar Tipe A</h3>
       <div class="kamar-harga">Rp1.350.000 <span data-i18n="kamar.bulan">/ bulan</span></div>
-      <p class="kamar-ukuran">± 3 × 3,5 m²</p>
+      <p class="kamar-ukuran"><svg class="ico-uk" width="15" height="15" aria-hidden="true"><use href="#ico-ukuran"/></svg><span>± 3 × 3,5 m²</span></p>
       <ul class="kamar-list">
-        <li><span class="cek">✔</span> AC</li>
-        <li><span class="cek">✔</span> TV</li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.km">Kamar mandi dalam</span></li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.ff">Full furnished</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> AC</li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> TV</li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.km">Kamar mandi dalam</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.ff">Full furnished</span></li>
       </ul>
       <a href="#booking" class="btn-booking" data-pick="A">
         <svg width="14" height="14"><use href="#ico-wa"/></svg>
@@ -355,18 +358,19 @@
 
   <div class="kamar-card-h" data-room="B" data-price="1150000">
     <div class="kamar-foto-h">
-      <img src="images/thumb/pilihan-kamar-b.jpg" data-full="images/pilihan-kamar-b.jpg" alt="Kamar Tipe B dengan tempat tidur, meja belajar, lemari, dan AC" loading="lazy" />
+      <img src="images/thumb/pilihan-kamar-b.jpg" data-full="images/pilihan-kamar-b.jpg" alt="Kamar Tipe B dengan tempat tidur, meja belajar, lemari, dan AC" loading="lazy" width="1200" height="900" decoding="async" />
       <span class="kamar-status" hidden></span>
     </div>
     <div class="kamar-info-h">
+      <p class="kamar-tag" data-i18n="kamar.tag.b">Paling hemat</p>
       <h3 class="kamar-nama" data-i18n="kamar.b">Kamar Tipe B</h3>
       <div class="kamar-harga">Rp1.150.000 <span data-i18n="kamar.bulan">/ bulan</span></div>
-      <p class="kamar-ukuran">± 3 × 2,5 m²</p>
+      <p class="kamar-ukuran"><svg class="ico-uk" width="15" height="15" aria-hidden="true"><use href="#ico-ukuran"/></svg><span>± 3 × 2,5 m²</span></p>
       <ul class="kamar-list">
-        <li><span class="cek">✔</span> AC</li>
-        <li><span class="cek">✔</span> TV</li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.km">Kamar mandi dalam</span></li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.ff">Full furnished</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> AC</li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> TV</li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.km">Kamar mandi dalam</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.ff">Full furnished</span></li>
       </ul>
       <a href="#booking" class="btn-booking" data-pick="B">
         <svg width="14" height="14"><use href="#ico-wa"/></svg>
@@ -377,19 +381,20 @@
 
   <div class="kamar-card-h" data-room="C" data-price="1500000">
     <div class="kamar-foto-h">
-      <img src="images/thumb/pilihan-kamar-c.jpg" data-full="images/pilihan-kamar-c.jpg" alt="Kamar Tipe C, kamar pojok yang paling luas, dengan meja belajar, rak, dan TV" loading="lazy" />
+      <img src="images/thumb/pilihan-kamar-c.jpg" data-full="images/pilihan-kamar-c.jpg" alt="Kamar Tipe C, kamar pojok yang paling luas, dengan meja belajar, rak, dan TV" loading="lazy" width="1200" height="900" decoding="async" />
       <span class="kamar-status" hidden></span>
     </div>
     <div class="kamar-info-h">
+      <p class="kamar-tag" data-i18n="kamar.tag.c">Paling luas</p>
       <h3 class="kamar-nama" data-i18n="kamar.c">Kamar Tipe C</h3>
       <div class="kamar-harga">Rp1.500.000 <span data-i18n="kamar.bulan">/ bulan</span></div>
-      <p class="kamar-ukuran" data-i18n="kamar.c.ukuran">± 4 × 3,5 m² · kamar pojok</p>
+      <p class="kamar-ukuran"><svg class="ico-uk" width="15" height="15" aria-hidden="true"><use href="#ico-ukuran"/></svg><span data-i18n="kamar.c.ukuran">± 4 × 3,5 m² · kamar pojok</span></p>
       <ul class="kamar-list">
-        <li><span class="cek">✔</span> <span data-i18n="kamar.luas">Kamar paling luas</span></li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.berdua">Bisa ditempati lebih dari 1 orang</span></li>
-        <li><span class="cek">✔</span> AC &amp; TV</li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.km">Kamar mandi dalam</span></li>
-        <li><span class="cek">✔</span> <span data-i18n="kamar.ff">Full furnished</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.luas">Kamar paling luas</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.berdua">Bisa ditempati lebih dari 1 orang</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> AC &amp; TV</li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.km">Kamar mandi dalam</span></li>
+        <li><svg class="cek" width="16" height="16" aria-hidden="true"><use href="#ico-cek"/></svg> <span data-i18n="kamar.ff">Full furnished</span></li>
       </ul>
       <a href="#booking" class="btn-booking" data-pick="C">
         <svg width="14" height="14"><use href="#ico-wa"/></svg>
@@ -510,26 +515,26 @@
         <button type="button" data-filter="parkir" aria-pressed="false" data-i18n="gf.parkir">Parkir &amp; Ruang Tamu</button>
       </div>
       <div class="galeri-grid">
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam.JPG" data-full="images/kolam.JPG" alt="Taman dan kolam di tengah area kos" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-taman.JPG" data-full="images/atas-taman.JPG" alt="Taman kos dilihat dari lantai atas" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-atas-wide.JPG" data-full="images/dapur-atas-wide.JPG" alt="Dapur bersama di lantai atas" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="parkir"><img src="images/thumb/parkiran-motor.JPG" data-full="images/parkiran-motor.JPG" alt="Area parkir motor penghuni" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/IMG_0263.JPG" data-full="images/IMG_0263.JPG" alt="Lorong kamar di dalam bangunan" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/meja-1.jpg" data-full="images/meja-1.jpg" alt="Meja belajar, kursi, TV, dan rak dinding di kamar" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-kiri.JPG" data-full="images/atas-kiri.JPG" alt="Deretan kamar di lantai atas" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/lemari-kamar.jpeg" data-full="images/lemari-kamar.jpeg" alt="Lemari pakaian di kamar" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam-kiri.JPG" data-full="images/kolam-kiri.JPG" alt="Taman kos dari sisi kiri" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/kamar-tipe-a-dan-b-2.jpeg" data-full="images/kamar-tipe-a-dan-b-2.jpeg" alt="Bagian dalam kamar dengan tempat tidur" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/IMG_0262.JPG" data-full="images/IMG_0262.JPG" alt="Selasar kamar lantai atas" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam-kanan.JPG" data-full="images/kolam-kanan.JPG" alt="Taman kos dari sisi kanan" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/kamar-tipe-b-1.jpeg" data-full="images/kamar-tipe-b-1.jpeg" alt="Contoh kamar dengan meja dan tempat tidur" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/IMG_0255.JPG" data-full="images/IMG_0255.JPG" alt="Kamar mandi dalam" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-kanan.JPG" data-full="images/atas-kanan.JPG" alt="Pemandangan dari lantai atas" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-atas-2.jpeg" data-full="images/dapur-atas-2.jpeg" alt="Dapur bersama lantai atas" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/meja-2.jpg" data-full="images/meja-2.jpg" alt="Meja belajar di kamar" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-bawah-2.JPG" data-full="images/dapur-bawah-2.JPG" alt="Dapur bersama lantai bawah dengan kompor dan rak piring" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="taman"><img src="images/thumb/view-pintu-bawah.jpg" data-full="images/view-pintu-bawah.jpg" alt="Pintu kamar lantai bawah menghadap taman" loading="lazy" /></div>
-        <div class="galeri-item" data-cat="parkir"><img src="images/thumb/ruang-tamu-parkiran-motor-1.jpeg" data-full="images/ruang-tamu-parkiran-motor-1.jpeg" alt="Ruang tamu dan parkir motor" loading="lazy" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam.JPG" data-full="images/kolam.JPG" alt="Taman dan kolam di tengah area kos" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-taman.JPG" data-full="images/atas-taman.JPG" alt="Taman kos dilihat dari lantai atas" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-atas-wide.JPG" data-full="images/dapur-atas-wide.JPG" alt="Dapur bersama di lantai atas" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="parkir"><img src="images/thumb/parkiran-motor.JPG" data-full="images/parkiran-motor.JPG" alt="Area parkir motor penghuni" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/IMG_0263.JPG" data-full="images/IMG_0263.JPG" alt="Lorong kamar di dalam bangunan" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/meja-1.jpg" data-full="images/meja-1.jpg" alt="Meja belajar, kursi, TV, dan rak dinding di kamar" loading="lazy" width="1200" height="799" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-kiri.JPG" data-full="images/atas-kiri.JPG" alt="Deretan kamar di lantai atas" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/lemari-kamar.jpeg" data-full="images/lemari-kamar.jpeg" alt="Lemari pakaian di kamar" loading="lazy" width="800" height="1200" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam-kiri.JPG" data-full="images/kolam-kiri.JPG" alt="Taman kos dari sisi kiri" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/kamar-tipe-a-dan-b-2.jpeg" data-full="images/kamar-tipe-a-dan-b-2.jpeg" alt="Bagian dalam kamar dengan tempat tidur" loading="lazy" width="1200" height="799" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/IMG_0262.JPG" data-full="images/IMG_0262.JPG" alt="Selasar kamar lantai atas" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/kolam-kanan.JPG" data-full="images/kolam-kanan.JPG" alt="Taman kos dari sisi kanan" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/kamar-tipe-b-1.jpeg" data-full="images/kamar-tipe-b-1.jpeg" alt="Contoh kamar dengan meja dan tempat tidur" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/IMG_0255.JPG" data-full="images/IMG_0255.JPG" alt="Kamar mandi dalam" loading="lazy" width="900" height="1200" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/atas-kanan.JPG" data-full="images/atas-kanan.JPG" alt="Pemandangan dari lantai atas" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-atas-2.jpeg" data-full="images/dapur-atas-2.jpeg" alt="Dapur bersama lantai atas" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="kamar"><img src="images/thumb/meja-2.jpg" data-full="images/meja-2.jpg" alt="Meja belajar di kamar" loading="lazy" width="1200" height="799" decoding="async" /></div>
+        <div class="galeri-item" data-cat="dapur"><img src="images/thumb/dapur-bawah-2.JPG" data-full="images/dapur-bawah-2.JPG" alt="Dapur bersama lantai bawah dengan kompor dan rak piring" loading="lazy" width="1200" height="900" decoding="async" /></div>
+        <div class="galeri-item" data-cat="taman"><img src="images/thumb/view-pintu-bawah.jpg" data-full="images/view-pintu-bawah.jpg" alt="Pintu kamar lantai bawah menghadap taman" loading="lazy" width="1200" height="799" decoding="async" /></div>
+        <div class="galeri-item" data-cat="parkir"><img src="images/thumb/ruang-tamu-parkiran-motor-1.jpeg" data-full="images/ruang-tamu-parkiran-motor-1.jpeg" alt="Ruang tamu dan parkir motor" loading="lazy" width="1200" height="800" decoding="async" /></div>
       </div>
     </div>
   </section>

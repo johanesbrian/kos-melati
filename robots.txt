@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kos-melati.pages.dev/sitemap.xml

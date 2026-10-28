@@ -118,6 +118,9 @@ var EN = {
   'kamar.c': 'Type C Room',
   'kamar.c.ukuran': '± 4 × 3.5 m² · corner room',
   'kamar.bulan': '/ month',
+  'kamar.tag.a': 'Mid-size',
+  'kamar.tag.b': 'Best value',
+  'kamar.tag.c': 'Most spacious',
   'kamar.km': 'Private bathroom',
   'kamar.ff': 'Fully furnished',
   'kamar.luas': 'The largest room',
@@ -444,7 +447,7 @@ var observer = new IntersectionObserver(function (entries) {
   entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.kamar-card-h, .fas-item, .faq-item, .galeri-item, .lok-list li').forEach(function (el) {
+document.querySelectorAll('.sec-header, .kamar-grid-center, .fas-grid, .galeri-grid, .faq-grid, .lok-list').forEach(function (el) {
   el.classList.add('fade-up');
   observer.observe(el);
 });
